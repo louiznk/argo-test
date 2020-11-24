@@ -1,0 +1,17 @@
+# ----- Ingress -----
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: hello
+  namespace: demo01
+  labels:
+    app: hello
+spec:
+  entryPoints:
+    - web
+  routes:
+  - match: Host(`hello.127.0.0.1.nip.io`)
+    kind: Rule
+    services:
+    - name: hello
+      port: 80
