@@ -1,0 +1,8 @@
+# ----- Ingress -----
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: hello
+spec:
+  routes:
+  - match: Host(`staging.127.0.0.1.sslip.io`)

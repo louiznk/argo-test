@@ -1,0 +1,12 @@
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: hello
+spec:
+  replicas: 2
+  template:
+    spec:
+      containers:
+        - name: hello
+          image: louiznk/helloworld-go:1.1
