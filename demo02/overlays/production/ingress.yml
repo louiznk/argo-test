@@ -6,3 +6,7 @@ metadata:
 spec:
   routes:
   - match: Host(`prod.127.0.0.1.sslip.io`)
+    kind: Rule
+    services:
+    - name: hello
+      port: 80
