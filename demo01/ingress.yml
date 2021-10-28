@@ -10,7 +10,7 @@ spec:
   entryPoints:
     - web
   routes:
-  - match: Host(`hello.127.0.0.1.nip.io`)
+  - match: Host(`hello.127.0.0.1.sslip.io`)
     kind: Rule
     services:
     - name: hello
