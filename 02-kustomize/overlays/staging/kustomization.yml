@@ -1,7 +1,8 @@
 ---
+# overlay staging
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: demo02-staging
+namespace: demo02-kustomize-staging
 bases:
 - ../../base
 patchesStrategicMerge:

@@ -3,7 +3,7 @@ apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
   name: hello
-  namespace: demo01
+  namespace: 01-static-yaml
   labels:
     app: hello
 spec:

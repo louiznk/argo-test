@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: hello
-  namespace: demo01
+  namespace: 01-static-yaml
   labels:
     app: hello
 spec:

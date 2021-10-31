@@ -3,11 +3,10 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: hello
-  namespace: demo01
   labels:
     app: hello
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: hello
@@ -21,7 +20,7 @@ spec:
           image: louiznk/helloworld-go:1.0
           ports:
             - name: web
-              containerPort: 80
+              containerPort: 8080
           resources:
             limits:
               cpu: "1"
@@ -29,3 +28,11 @@ spec:
             requests:
               cpu: "0.2"
               memory: "8Mi"
+          livenessProbe:
+            httpGet:
+              path: /
+              port: web
+          readinessProbe:
+            httpGet:
+              path: /
+              port: web
