@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: hello
-          image: louiznk/helloworld-go:1.0
+          image: registry.gitlab.com/gitops-heros/sith:0.1
           ports:
             - name: web
               containerPort: 8080

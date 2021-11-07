@@ -4,11 +4,13 @@
 
 replicaCount: 2
 
+environnement: "production"
+
 image:
-  repository: louiznk/helloworld-go
+  repository: registry.gitlab.com/gitops-heros/sith
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.0"
+  tag: "0.1"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -47,7 +49,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: prod.127.0.0.1.sslip.io
+    - host: prod.74.220.17.78.sslip.io
       paths:
         - path: /
           pathType: ImplementationSpecific
@@ -74,6 +76,11 @@ autoscaling:
   maxReplicas: 100
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
+
+sealedSecret:
+  create: false
+  secrets:
+    foo: AgBJMJ28fa2hsmKW2CgAGI55OGu5vuqGv/m1SMw+ubIWmKCPSpg4DQZyrcVmWnIbEf9erg/VCY6QCGpyaNjFTcnk+TEYVqHdyvPj8BF1RV28Bp2IuXui7NwK6peyrI8gwBE3oBk6avFJEus8oCBkt0A6WY6kLIE2s+FTtZ+vNStPK1Vrs5ONRLfqUuLcv1t2QPL/2HuWonga5LwHuLrv4ZYW+MEniIOGIvw2QYSwLDtjBJf5Tb49B6eX12/xGOgQ4A5sEoYObGiNutR81qZsMR1Gt2kq1C+ARMEm39q81VUVny7peNlYeMbWoColCcHEbOwa2JklHFUmFsApCrNmqBITfGQKpJDiqNHFnGp8NU3GjSLgrIL/SYmw8gF3A8p9dfxCgP+UzR7q8zZT3kNGOZPR6SQ1ZPC5ujXRSRX5Pt1tN402vCltrBM/XPddMFA7iDEU/5WbEGmITxNX47g/I1R7M2VA819hr3vTd9gehH5eeH5CgSA3NZrQMOHjYP5ZRh9ZQ9Bn85O7hw5nGttYG5CRaEBeLRnyNG47zRWW26XM6vvLUyCre/FP0t2mcWYE6zVqCK4Ks4DL9nr8Dzb7xAfOGhQj1MXg0wdJ/KuQcbrSnMObST7BvZMYEFDPa98F7mCab5tGNaRtkvzJAaPY/ETXC/E8GPEFNJNP1Kv9U50bZVnYdG4vVyL/Z9J48SWR5oH8LZs/FuCapqJTRO2ZkNid8zQ=
 
 nodeSelector: {}
 

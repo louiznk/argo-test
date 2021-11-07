@@ -5,7 +5,7 @@ metadata:
   name: hello
 spec:
   routes:
-  - match: Host(`staging.127.0.0.1.sslip.io`)
+  - match: Host(`staging.74.220.17.78.sslip.io`)
     kind: Rule
     services:
     - name: hello

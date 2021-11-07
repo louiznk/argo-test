@@ -4,11 +4,13 @@
 
 replicaCount: 1
 
+environnement: "staging"
+
 image:
-  repository: louiznk/helloworld-go
+  repository: registry.gitlab.com/gitops-heros/sith
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.1"
+  tag: "1.2"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -47,7 +49,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: staging.127.0.0.1.sslip.io
+    - host: staging.74.220.17.78.sslip.io
       paths:
         - path: /
           pathType: ImplementationSpecific
@@ -74,6 +76,11 @@ autoscaling:
   maxReplicas: 100
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
+
+sealedSecret:
+  create: false
+  secrets:
+    foo: AgBCs/UN7XwKcQDSdG8gRBJkRWgg/KGMYmqc322qdJ4Nm3efBk0R96JmZvGCDSsnP7S5ICAXhjN4XsDpBst2SIa69iVamiXBkKgidjxCV/L0KgHre0Faq5TIZZ8wx68Jx63g0HVi6k8Lt4+bd/eKdXGKxHn7ORqdMa4VTZLNNl/2lBA/Ul79WRZhs/VL8wQF/wIXtP5glQhmnl04i22GUYAi3hvqNtGARnCX9jS5BlidYdje5XUuDg+Z9aWM0apyfQbwJFcAyc1bBFNFf93HcQvj9j2HWw9mVE6SjBycfCazeBwjsmrlqovYs/6agzt/rKX3xlQjAlOxZMfLpUltAO+Yp3kGJ6vgOzM6t0jni2VEirtFoOmgZar+HREw38XjRBgMhbK/XTAnpdWEF3YFzpp+tkw/F5p3UHFMFY7G+wmL6qKMX64pDdCXo2NVyb+Qwx3Vgu3PkF2VgDNHSUGaxVeLp0ihkOtXHJ2GOlryUa57USpOJX89sqN6+07+PEUbqVrGzvWIks7HrE+FE5+FSYxNQ0gDCtZWfjz4UFs1NOB9GrJxpCNgBDX9PGuqaf3LHbcCAi4oOu3KdeDKv8xl97a0L/cvlAjP6R/gHiC61zRV4egZ3vXvxzjZ4xETn+isVk2z9y2dWzoM7LWOjFvJEtnw5tq8DMjP8iuN6iUjPBbAKopvYobzd5xxrtZDS9x3XQqdse5JtBUOCNtQzLK3IjczGVoM7T5ZQyw=
 
 nodeSelector: {}
 

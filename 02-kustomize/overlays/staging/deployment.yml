@@ -9,4 +9,7 @@ spec:
     spec:
       containers:
         - name: hello
-          image: louiznk/helloworld-go:1.1
+          image: registry.gitlab.com/gitops-heros/sith:1.1
+          env:
+          - name: ENV
+            value: "staging"
