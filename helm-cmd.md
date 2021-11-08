@@ -1,27 +1,26 @@
 # 
-
+Create les templates par défaut
 ```bash
 helm create balrog 
 ```
-modifie
 
-test
+Modifie  
+
+et test
 ```
 helm install prod --create-namespace -n demo02-helm-prod --dry-run --debug .
 ```
 
-install prod
+Install prod
 
 ```
 helm install prod --create-namespace -n demo02-helm-prod
 ```
 
-prepare staging (nouveau fichier values-staging.yml)
+Prepare staging (nouveau fichier values-staging.yml)
 
 
--f
-
-test
+Test
 ```
 helm install staging --create-namespace -n demo02-helm-staging --dry-run --debug -f values-staging.yaml .
 ```
