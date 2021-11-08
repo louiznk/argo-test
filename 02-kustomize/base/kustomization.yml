@@ -5,7 +5,8 @@ kind: Kustomization
 commonLabels:
   app: kustomize
   version: demo02
-
+generatorOptions:
+  disableNameSuffixHash: true
 resources:
 - deployment.yml
 - svc.yml
