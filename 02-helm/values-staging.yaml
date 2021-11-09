@@ -10,7 +10,7 @@ image:
   repository: registry.gitlab.com/gitops-heros/sith
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.0"
+  tag: "1.2"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -78,8 +78,8 @@ autoscaling:
   # targetMemoryUtilizationPercentage: 80
 
 sealedSecret:
-  create: false
-  secretFoo: 'AgBCs/UN7XwKcQDSdG8gRBJkRWgg/KGMYmqc322qdJ4Nm3efBk0R96JmZvGCDSsnP7S5ICAXhjN4XsDpBst2SIa69iVamiXBkKgidjxCV/L0KgHre0Faq5TIZZ8wx68Jx63g0HVi6k8Lt4+bd/eKdXGKxHn7ORqdMa4VTZLNNl/2lBA/Ul79WRZhs/VL8wQF/wIXtP5glQhmnl04i22GUYAi3hvqNtGARnCX9jS5BlidYdje5XUuDg+Z9aWM0apyfQbwJFcAyc1bBFNFf93HcQvj9j2HWw9mVE6SjBycfCazeBwjsmrlqovYs/6agzt/rKX3xlQjAlOxZMfLpUltAO+Yp3kGJ6vgOzM6t0jni2VEirtFoOmgZar+HREw38XjRBgMhbK/XTAnpdWEF3YFzpp+tkw/F5p3UHFMFY7G+wmL6qKMX64pDdCXo2NVyb+Qwx3Vgu3PkF2VgDNHSUGaxVeLp0ihkOtXHJ2GOlryUa57USpOJX89sqN6+07+PEUbqVrGzvWIks7HrE+FE5+FSYxNQ0gDCtZWfjz4UFs1NOB9GrJxpCNgBDX9PGuqaf3LHbcCAi4oOu3KdeDKv8xl97a0L/cvlAjP6R/gHiC61zRV4egZ3vXvxzjZ4xETn+isVk2z9y2dWzoM7LWOjFvJEtnw5tq8DMjP8iuN6iUjPBbAKopvYobzd5xxrtZDS9x3XQqdse5JtBUOCNtQzLK3IjczGVoM7T5ZQyw='
+  create: true
+  secretFoo: 'AgBA+BKJa+l6H+hLgou1BS17yZYa/fRfVHX/+o4U5Pgxu/EJpXLabt8Wqn33INMIihWxPLIgLTu0WuMzAUp9navPy9Vw3p8fLbRH054ReUk3LjlaSKE5xPDQCXKvDwldSQ7GSaaGgLYQ/CGYM7Z1xl1FwEfvDK8WFi6zzuF2QNNBQFjRCEl0+OCJKQWq8tpTp8JKu8E4Q5KdXNeBQSF06Cc/s76/k6kuz5ZfvFVf9k+IcMRSwv2eCuqo/i1fj6dpsihxEecBWdkoy9sdASXESuTYSx4U0TNFg4T1gtgQ2M18RyVezC9gscc1DOo1/DokNy3wBsrHO2PtOXF3M3oR5vJXOggAv7tLpiGlCeBuM8VO8Pvk4RLDXJKDz/g+6btV+i0vIwiY+h496l30ZcINAHWmgRozagOAswdmFFi2LwFzcybQU9i2sBh+5YlVNrKBCJLt9KuzKwgj7BE5eYlZ2Oa8IBsvW6/UWL4T8iJweJUIBCoaRRxoAtgyAjoMedshDXn8H4f5WG157CFqgFKVDncfDmzh66cvZWA0xJxnvC/QjtE9vUCk0oecGHSRT0Nv0q8lzjGu5vFaW67yG0vTiogSW8fTZ9CaheqtBIewLEzAwEyZWKRjYjxfYdQLYo5bRmAtT13krvAgJdd2KHZHaJUdDaZPdmK+nEZVTxQeCLCe3a6GukI5oCIsqEPwNGyoBEdfph4gB2utl5T1wO1pZYhvkD0xskfRASs='
 
 secrets:
   create: false
