@@ -49,7 +49,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: staging.127.0.0.1.sslip.io
+    - host: staging.74.220.22.248.sslip.io
       paths:
         - path: /
           pathType: ImplementationSpecific
