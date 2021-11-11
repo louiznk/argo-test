@@ -6,6 +6,8 @@ metadata:
   namespace: 01-static-yaml
   labels:
     app: hello
+  annotations:
+    link.argocd.argoproj.io/external-link: http://hello.74.220.22.248.sslip.io
 spec:
   entryPoints:
     - web
