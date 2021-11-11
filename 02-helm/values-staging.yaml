@@ -49,7 +49,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: staging.74.220.21.5.sslip.io
+    - host: staging.127.0.0.1.sslip.io
       paths:
         - path: /
           pathType: ImplementationSpecific
@@ -78,7 +78,7 @@ autoscaling:
   # targetMemoryUtilizationPercentage: 80
 
 sealedSecret:
-  create: true
+  create: false
   secretFoo: 'AgARZrqN31qnFJEZ+1L1EdgyEFPO32GAjz/KlWxiPkMJT6xkXDf+H33nPlVYhdA/W1dQIOvdqFE1sSEUfdaE1ym5xlnx8x572GCLWckg8Rwr65YR441e4WCHLq+oMwWhDgOXKeuKWbsplRpWxruxQbHhJmtCin0jI1jgB4ps2v+aopwug7ckNMd1K/vkfOi8GW6KTK78gZGTJjLw0nDTE0icxcqpvvvnnlozgdVyexomDW9wYLdbcflKCus7jv0HDTzYaLMb5H5ZzLxXfveRPRSVUcxLVf6RSc0JQbYMuJClfTWpJidIfQG23g5naMbCpIyAToH2K1iQkHZ+H2qq5JLj+vBu1alSPdgtjiKSg+jxvfYNHbdpVSI6X5TBPYoGZLk0kbqRjezpHzD4QRQpMyqRG1bmS/r2Rdw72uWOBFJSQULhFIOT9VHI/IiCryhtgfXCb3cgmLg9houRN3kyf3uTuH8fGgTrCY7mK5D2uOu9Iaylr6fYs2IVo9A93HX3Iz70YSDqhyhTP4NtAxuvnjnuVAN0/kazGNTkNxWO/ExkhAtwjtfsr8wYYUETRmW6R2N4hyqD9O8Zzjxl5LO0gyvhY40nVzEZvnmF5g3tE8LwUE4G7iuJRsUubiaCK2ezSgb8xNiRFhkmAu/kRsosurP53uRB4YNclvv8KnyR9sezHjXHfoW8ccB9DTp7r9xPKm3Af41cceG3n8ALzB1UMm9rLM8w92Kv+dg='
 
 secrets:
