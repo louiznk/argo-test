@@ -3,6 +3,8 @@ apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
   name: hello
+  annotations:
+    link.argocd.argoproj.io/external-link: http://staging.74.220.22.248.sslip.io
 spec:
   routes:
   - match: Host(`staging.74.220.22.248.sslip.io`)

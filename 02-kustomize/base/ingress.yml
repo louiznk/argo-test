@@ -5,6 +5,8 @@ metadata:
   name: hello
   labels:
     app: hello
+  annotations:
+    link.argocd.argoproj.io/external-link: http://yolo.74.220.22.248.sslip.io
 spec:
   entryPoints:
     - web
