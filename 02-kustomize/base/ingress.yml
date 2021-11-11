@@ -6,12 +6,12 @@ metadata:
   labels:
     app: hello
   annotations:
-    link.argocd.argoproj.io/external-link: http://yolo.74.220.22.248.sslip.io
+    link.argocd.argoproj.io/external-link: http://yolo.74.220.16.249.sslip.io
 spec:
   entryPoints:
     - web
   routes:
-  - match: Host(`yolo.74.220.22.248.sslip.io`)
+  - match: Host(`yolo.74.220.16.249.sslip.io`)
     kind: Rule
     services:
     - name: hello
