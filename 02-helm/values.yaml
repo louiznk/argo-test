@@ -92,3 +92,9 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+
+providers:
+  kubernetesIngress:
+    publishedService:
+      enabled: true
