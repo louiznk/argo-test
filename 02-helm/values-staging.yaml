@@ -49,7 +49,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: staging.74.220.17.78.sslip.io
+    - host: staging.74.220.22.248.sslip.io
       paths:
         - path: /
           pathType: ImplementationSpecific
@@ -79,7 +79,7 @@ autoscaling:
 
 sealedSecret:
   create: false
-  secretFoo: 'AgBCs/UN7XwKcQDSdG8gRBJkRWgg/KGMYmqc322qdJ4Nm3efBk0R96JmZvGCDSsnP7S5ICAXhjN4XsDpBst2SIa69iVamiXBkKgidjxCV/L0KgHre0Faq5TIZZ8wx68Jx63g0HVi6k8Lt4+bd/eKdXGKxHn7ORqdMa4VTZLNNl/2lBA/Ul79WRZhs/VL8wQF/wIXtP5glQhmnl04i22GUYAi3hvqNtGARnCX9jS5BlidYdje5XUuDg+Z9aWM0apyfQbwJFcAyc1bBFNFf93HcQvj9j2HWw9mVE6SjBycfCazeBwjsmrlqovYs/6agzt/rKX3xlQjAlOxZMfLpUltAO+Yp3kGJ6vgOzM6t0jni2VEirtFoOmgZar+HREw38XjRBgMhbK/XTAnpdWEF3YFzpp+tkw/F5p3UHFMFY7G+wmL6qKMX64pDdCXo2NVyb+Qwx3Vgu3PkF2VgDNHSUGaxVeLp0ihkOtXHJ2GOlryUa57USpOJX89sqN6+07+PEUbqVrGzvWIks7HrE+FE5+FSYxNQ0gDCtZWfjz4UFs1NOB9GrJxpCNgBDX9PGuqaf3LHbcCAi4oOu3KdeDKv8xl97a0L/cvlAjP6R/gHiC61zRV4egZ3vXvxzjZ4xETn+isVk2z9y2dWzoM7LWOjFvJEtnw5tq8DMjP8iuN6iUjPBbAKopvYobzd5xxrtZDS9x3XQqdse5JtBUOCNtQzLK3IjczGVoM7T5ZQyw='
+  secretFoo: 'AgARZrqN31qnFJEZ+1L1EdgyEFPO32GAjz/KlWxiPkMJT6xkXDf+H33nPlVYhdA/W1dQIOvdqFE1sSEUfdaE1ym5xlnx8x572GCLWckg8Rwr65YR441e4WCHLq+oMwWhDgOXKeuKWbsplRpWxruxQbHhJmtCin0jI1jgB4ps2v+aopwug7ckNMd1K/vkfOi8GW6KTK78gZGTJjLw0nDTE0icxcqpvvvnnlozgdVyexomDW9wYLdbcflKCus7jv0HDTzYaLMb5H5ZzLxXfveRPRSVUcxLVf6RSc0JQbYMuJClfTWpJidIfQG23g5naMbCpIyAToH2K1iQkHZ+H2qq5JLj+vBu1alSPdgtjiKSg+jxvfYNHbdpVSI6X5TBPYoGZLk0kbqRjezpHzD4QRQpMyqRG1bmS/r2Rdw72uWOBFJSQULhFIOT9VHI/IiCryhtgfXCb3cgmLg9houRN3kyf3uTuH8fGgTrCY7mK5D2uOu9Iaylr6fYs2IVo9A93HX3Iz70YSDqhyhTP4NtAxuvnjnuVAN0/kazGNTkNxWO/ExkhAtwjtfsr8wYYUETRmW6R2N4hyqD9O8Zzjxl5LO0gyvhY40nVzEZvnmF5g3tE8LwUE4G7iuJRsUubiaCK2ezSgb8xNiRFhkmAu/kRsosurP53uRB4YNclvv8KnyR9sezHjXHfoW8ccB9DTp7r9xPKm3Af41cceG3n8ALzB1UMm9rLM8w92Kv+dg='
 
 secrets:
   create: false

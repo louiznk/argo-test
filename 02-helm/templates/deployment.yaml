@@ -50,6 +50,15 @@ spec:
               port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+          volumeMounts:
+          - name: secret-volume
+            mountPath: "/etc/sith/"
+            readOnly: true
+      volumes:
+        - name: secret-volume
+          secret:
+            secretName: james-secrets
+
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
